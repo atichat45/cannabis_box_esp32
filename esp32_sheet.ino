@@ -13,7 +13,7 @@ const int DHTPin = 4;
 
 int z=0;
 int y=0;
-//void(* resetFunc) (void) = 0;
+
 //----------------------------------------SSID dan Password wifi mu gan.
 const char* ssid = "iot"; //--> Nama Wifi / SSID.
 const char* password = "zx123456"; //-->  Password wifi .
@@ -75,21 +75,7 @@ void setup() {
 //==============================================================================
 //============================================================================== void loop
 void loop() {
-  // if(z%10==0){
-  //   if(y%2==0){
-  //   WiFi.disconnect();
-  //   WiFi.begin(ssid1, password1);
-  //   Serial.println("Widfi1 reconnected");
-  //   y++;
-  //   }
-  //   else{
-  //     WiFi.disconnect();
-  //     WiFi.begin(ssid, password);
-  //     Serial.println("Widfi0 reconnected");
-  //     y++;
-  //   }
-  // }
-
+ 
   now = millis();
   // Publishes new temperature and humidity every 3 seconds
   if (now - lastMeasure > 3000) {
@@ -141,7 +127,6 @@ void loop() {
     // Serial.print(z);
   }
 
-  
 }
 //*****
 //==============================================================================
